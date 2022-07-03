@@ -9,7 +9,7 @@ import { TransferService } from 'src/app/services/transfer.service';
 })
 export class CompletedComponent implements OnInit {
   open: boolean = false;
-
+  listComp: Lista[] = [];
   constructor(private transferService: TransferService) {}
 
   ngOnInit(): void {
@@ -17,17 +17,21 @@ export class CompletedComponent implements OnInit {
     this.listComp = this.transferService
       .arr1()
       .filter((ele) => ele.completed == true);
-    setInterval((): boolean => {
+    setTimeout((): boolean => {
+
       return (this.open = true);
+
     }, 2000);
 
-   /*  this.listComp = this.transferService.arr1(); */
+    /* this.listComp = this.transferService.arr1(); */
   }
   removi(c: Lista) {
     let index = this.listComp.indexOf(c);
     this.listComp.splice(index, 1);
-    c.id--;
+
     this.transferService.remove(c);
   }
-  listComp: Lista[] = [];
+
 }
+
+

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { TodoPageComponent } from './todo-page/todo-page.component';
 import { CompletedComponent } from './todo-page/completed/completed.component';
 import { FormsModule } from '@angular/forms';
+import { Page404Component } from './pages/page404/page404.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoPageComponent,
-    CompletedComponent
+    CompletedComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,

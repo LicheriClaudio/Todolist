@@ -1,16 +1,21 @@
-<div id="nav">
-<p><a class="nav" href="#" [routerLink]="['/todo-page']" routerLinkActive="router-link-active" >To-Do</a>
+<div class="css">
+<h1><a class="nav" href="#" [routerLink]="['/todo-page']" routerLinkActive="router-link-active" >To-Do</a>
 <a class="nav" href="#" [routerLink]="['/completed']" routerLinkActive="router-link-active">Completati</a>
-</p>
+</h1>
+
 </div>
-<div><h1>To-Do Completati</h1>
-<h1 class="REC" *ngIf="open == false">RECUPERO DATI ...</h1>
+<div class="css1">
+  <h1 class="REC" *ngIf="open == false">RECUPERO DATI ...</h1>
+
   <div  *ngFor="let Lista of listComp" class="checkbox">
 
-   <div *ngIf="open == true">
-
-   <label for="checkbox">{{Lista.title}}</label>
-   <input id="checkbox" type="checkbox"   [checked]="Lista.completed" (change)="Lista.completed = !Lista.completed"><button (click)="removi(Lista)">Canc</button><!-- <button (click)="removi()"></button> -->
+      <div  style=" margin-top: 1.3rem;" *ngIf="open == true">
+      <div class="Todo">
+        <button class="remove" (click)="removi(Lista)"><i class="fa-solid fa-trash-can"></i></button>
+        <label class="comp" for="checkbox">{{Lista.title}}</label>
+        <input id="checkbox" type="checkbox"   [checked]="Lista.completed" (change)="Lista.completed = !Lista.completed"><!-- <button (click)="removi()"></button> -->
+      </div>
+    </div>
   </div>
 </div>
 <!-- <p  *ngFor="let lista1 of listComp">{{lista1.title}}  <input  type="checkbox"  aria-label="checked"  >

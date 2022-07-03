@@ -24,12 +24,21 @@ counter:number = 0
 
 
    listaScritta():void{
+if (this.dino.trim() !== '') {
+
+
     this.counter++
     let ele = { id: this.counter, title: this.dino, completed: false };
     this.list.push(ele)
     this.transferService.arrSwitch(this.list)
     console.log(this.list)
     console.log(ele);
+    this.dino = ''
+
+}else {
+  alert('campo vuoto')
+}
+
 
    };
 

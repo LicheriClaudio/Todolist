@@ -19,7 +19,7 @@ export class TransferService {
   remove(u: Lista): void {
     let index = this.list.indexOf(u);
     this.list.splice(index, 1);
-    u.id--
+
   }
 
   /*  getDone(): Lista[] {} */

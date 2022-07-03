@@ -1,4 +1,4 @@
-#nav {
+/* #nav {
 
   font-size: 2rem;
   text-align: center;
@@ -9,9 +9,145 @@
   font-size: 2rem;
   text-align: center;
   text-align: center;
+  margin-left: 2rem;
 }
 
 .REC {
   text-align: center;
   margin: 0 auto;
+}
+
+label {
+  margin-top: 1.3rem;
+}
+
+.css {
+  color: white;
+  text-align: center;
+  border: solid black 2px;
+  background: rgba(24, 24, 24, 0.778);
+  box-shadow: 2rem 2rem 2rem gray;
+}
+
+.css1 {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.css a:visited {
+  color: white;
+}
+ */
+ #nav {
+
+  font-size: 2rem;
+  text-align: center;
+  text-align: center;
+  width: 40%;
+}
+.nav {
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  text-align: center;
+   margin-left: 2rem;
+   width: 40%;
+}
+h1 {
+  color: white;
+}
+.ListaInserita {
+  text-align: center;
+  margin-top: 2rem;
+
+}
+.form{
+  text-align: center;
+  color:  white;
+  width: 40rem;
+  height: 1.5rem;
+  background: #780206;
+  background: -webkit-linear-gradient(to right, #061161, #780206);
+  background: linear-gradient(to right, #061161, #780206);
+
+}
+
+.checkbox{
+  font-size: 1.5rem;
+  color: white;
+
+}
+.css {
+
+  color: white;
+  text-align: center;
+
+
+}
+.comp {
+ font-size: 1.1rem;
+}
+
+.css1 {
+
+  text-align: center;
+
+
+  margin-top: 5rem;
+}
+
+.css a:visited {
+  color: white;
+}
+.Todo {
+
+  padding: 2px 16px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 2px 2px 2px 2px;
+  border: 2px solid white;
+  background: #e65c00;
+  background: -webkit-linear-gradient(to right, #F9D423, #e65c00);
+  background: linear-gradient(to right, #F9D423, #e65c00);
+
+  /* background: #2b5876;
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+  background: linear-gradient(to right, #4e4376, #2b5876); */
+
+  width: 40%;
+  height: 60%;
+  margin-left: 25rem;
+  margin-top: 5px;
+  border-radius:10px;
+
+}
+#checkbox{
+  margin-left: 1.5rem;
+  width: 1.5rem;
+  height: 1.2rem;
+  color: rgb(0, 0, 0);
+  background-color: #7a2828;
+
+}
+.btn {
+  background: #2b5876;
+  background: #a73737;
+  background: -webkit-linear-gradient(to right, #7a2828, #a73737);
+  background: linear-gradient(to right, #7a2828, #a73737);
+  margin-right:3px ;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 30%;
+}
+.remove {
+  background: #a73737;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   margin-right:2rem;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 30%;
 }
