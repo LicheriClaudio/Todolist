@@ -1,0 +1,23 @@
+
+
+<div class="css">
+
+  <div id="nav">
+<p><a class="nav" href="#" [routerLink]="['/todo-page']" routerLinkActive="router-link-active" >To-Do</a>
+<a class="nav" href="#" [routerLink]="['/completed']" routerLinkActive="router-link-active">Completati</a>
+</p>
+</div>
+
+  <div class="ListaInserita">
+  <input  [(ngModel)]="dino" #lista  type="text" class="form" id="ListaInserita" placeholder="Scrivi la tua lista">
+  <button type="button" (click)="listaScritta()"  class="btn btn-success form-control">Add</button>
+
+  </div>
+   <h2>To-Do list</h2>
+  <div *ngFor="let Lista of list" class="checkbox">
+
+    <label for="checkbox">{{Lista.id}})--{{Lista.title}}</label><button (click)="removi(Lista)">Canc</button>
+    <!-- <button (click)="checked(Lista.title)">cnf</button> -->
+    <input id="checkbox" type="checkbox"     [checked]="Lista.completed" (change)="Lista.completed = !Lista.completed">
+  </div>
+</div>
